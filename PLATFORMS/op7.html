@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="theme.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Car Slots</title>
+</head>
+<body>
+  <body style="background-color:rgb(0, 0, 0);"></body>  	
+  <a id="login-button" onclick="Logout();" href="#" class="button logout login w-button">Logout</a>
+
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+        <a href="../HOME/index.html" class="nav-link">
+          <span class="link-text logo-text">E-ComGuide</span>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fad"
+            data-icon="angle-double-right"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+          >
+            <g class="fa-group">
+              <path
+                fill="currentColor"
+                d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                class="fa-secondary"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                class="fa-primary"
+              ></path>
+            </g>
+          </svg>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="CATEGORY.html" onclick="platforms();" class="nav-link">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fad"
+            data-icon="car"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 900 900"
+            class="svg-inline--fa fa-car fa-w-16 fa-9x"
+          >
+            <g class="fa-group">
+              <path
+                fill="currentColor"
+                d="M816.962 410.853l-18.4-318.526h-94.794l-17.641 349.146-289.492 67.628v74.737l-102.667-18.572-12.186-210.855h-69.284l-9.804 194.353-57.65-10.426v502.972h754.975v-649.79l-83.057 19.332zM802.461 564.921c-1.485 3.936-3.141 10.667-5.765 17.088l-8.18 23.371c-2.934 8.734-6.213 17.779-9.734 26.617-3.52 9.079-7.077 18.917-11.218 27.823-4.109 8.976-8.319 18.848-13.36 27.375-22.197 40.668-52.939 74.105-90.003 98.802 47.611-39.253 39.741-32.038 31.937-24.306-34.93 32.501-78.002 56.726-125.806 69.274 32.197-5.701-15.739 11.395-66.967 17.955 64.661-13.223 42.464-7.866 19.253-6.145 9.923 71.393 27.392 165.877 27.633 167.085l-16.743 3.279c-0.966-5.005-17.986-97.142 17.812-179.991l3.901-9.77c9.217-22.473 22.887-52.058 39.491-79.951 8.25-14.050 17.398-27.478 26.546-39.699l13.911-16.985 13.601-14.325c4.626-4.039 8.803-7.767 12.496-11.046 3.589-3.487 7.423-5.593 10.287-7.767l9.217-6.491-9.7 5.731c-3.038 1.933-7.077 3.798-10.943 7.008l-13.532 10.15-14.879 13.429-15.568 16.156c-10.183 11.668-20.644 24.578-30.171 38.18-50.477 71.661-87.276 156.72-104.566 248.662 55.616-165.744 53.543-161.635 51.715-157.734-2.85-7.571-4.722-16.326-5.217-25.449 0.417 8.499-2.033-0.58-3.276-10.315-1.385-9.529-2.174-20.531-2.174-31.717 0-0.16 0-0.321 0-0.48 0.345-27.092 5.498-52.906 14.643-76.742 3.066-9.018 9.072-21.307 16.045-33.218 6.732-12.014 15.534-23.301 24.372-34.175 9.459-10.667 19.814-20.644 30.724-29.689 27.71-21.923 61.051-38.032 97.462-45.887-48.787 16.37-36.636 10.674-23.379 7.292 16.505-4.782 35.511-7.693 55.142-8.031-4.811 0.366 6.615 0.747 16.73 1.747 10.012 0.863 19.814 4.281 27.065 6.317 7.249 1.967 13.36 5.143 17.156 6.697 3.936 1.83 6.076 3.107 6.076 3.107l-2.036 6.766zM170.071 342.986c8.18-3.348 14.947-8.527 18.848-15.5 5.315-8.18 4.971-9.872 8.285-16.535 1.809-5.89 4.79-10.959 8.694-15.158-2.723 4.353-2.445 2.351-0.858 1.936 2.763-2.277 11.012-1.415 17.812 0.621 13.981 4.177 25.166 8.907 25.166 8.907s-2.486-11.875-15.362-24.786c-6.151-6.241-13.979-10.814-22.752-12.99 4.766 1.424-2.103-1.302-10.527 0.148-9.558 1.331-17.773 6.247-23.385 13.322-5.869 7.081-10.988 17.845-13.005 29.668 2.386-10.298-0.272-1.324-1.274-1.045-0.966 2.208-2.348 4.109-2.969 5.040-0.863 0.483-2.036 2.243-5.109 2.002-3.673-0.073-7.179-0.671-10.482-1.724-12.75-4.18-23.762-9.633-23.762-9.633s1.622 12.117 14.395 25.58c3.418 3.279 7.354 6.939 13.463 9.286 3.68 1.659 7.977 2.626 12.502 2.626 3.698 0 7.244-0.645 10.533-1.831zM632.342 85.423c3.691 1.71 8.011 2.707 12.564 2.707 3.677 0 7.202-0.651 10.466-1.842 7.97-3.315 14.735-8.494 18.637-15.467 5.315-8.18 4.971-9.838 8.285-16.535 1.809-5.89 4.79-10.959 8.694-15.158-2.723 4.318-2.445 2.351-0.858 1.901 2.763-2.277 10.977-1.381 17.812 0.621 13.981 4.211 25.166 8.941 25.166 8.941s-2.486-11.909-15.362-24.786c-6.234-6.314-14.156-10.946-23.033-13.168 5.047 1.603-1.823-1.124-10.245 0.325-9.55 1.312-17.755 6.22-23.353 13.289-5.9 7.098-11.019 17.844-13.041 29.649 2.355-10.245-0.269-1.269-1.269-0.994-0.966 2.208-2.348 4.109-2.969 5.040-0.863 0.483-2.036 2.243-5.109 2.002-3.744-0.095-7.31-0.71-10.673-1.779-12.559-4.125-23.571-9.578-23.571-9.578s1.622 12.083 14.395 25.58c3.383 3.245 7.354 6.868 13.463 9.251z"
+                class="fa-secondary"
+              ></path>
+            </g>
+          </svg>
+          <span class="link-text">PLATFORMS</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="../TIPS/SSP.html" onclick="tips();" class="nav-link">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fad"
+            data-icon="alien-monster"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 35 35"
+            class="svg-inline--fa fa-alien-monster fa-w-18 fa-9x"
+          >
+            <g class="fa-group">
+              <path
+                fill="currentColor"
+                d="M29,4H3C1.9,4,1,4.9,1,6v20c0,1.1,0.9,2,2,2h26c1.1,0,2-0.9,2-2V6C31,4.9,30.1,4,29,4z M4,26
+                c-0.55,0-1-0.45-1-1s0.45-1,1-1s1,0.45,1,1S4.55,26,4,26z M9,25c0,0.55-0.45,1-1,1s-1-0.45-1-1v-3c0-0.55,0.45-1,1-1s1,0.45,1,1V25z
+                 M13,25c0,0.55-0.45,1-1,1s-1-0.45-1-1v-6c0-0.55,0.45-1,1-1s1,0.45,1,1V25z M17,25c0,0.55-0.45,1-1,1s-1-0.45-1-1v-9
+                c0-0.55,0.45-1,1-1c0.55,0,1,0.45,1,1V25z M21,25c0,0.55-0.45,1-1,1s-1-0.45-1-1V13c0-0.55,0.45-1,1-1s1,0.45,1,1V25z M25,25
+                c0,0.55-0.45,1-1,1s-1-0.45-1-1V10c0-0.55,0.45-1,1-1s1,0.45,1,1V25z M29,25c0,0.55-0.45,1-1,1s-1-0.45-1-1V7c0-0.55,0.45-1,1-1
+                s1,0.45,1,1V25z"
+              ></path>
+            </g>
+          </svg>
+          <span class="link-text">GROWTH TIPS</span>
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a href="../HOME/index.html#footer" class="nav-link">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fad"
+            data-icon="space-station-moon-alt"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="svg-inline--fa fa-space-station-moon-alt fa-w-16 fa-5x"
+          >
+            <g class="fa-group">
+              <path
+                fill="currentColor"
+                d="M501.70312,224H448V160H368V96h48V66.67383A246.86934,246.86934,0,0,0,256,8C119.03125,8,8,119.0332,8,256a250.017,250.017,0,0,0,1.72656,28.26562C81.19531,306.76953,165.47656,320,256,320s174.80469-13.23047,246.27344-35.73438A250.017,250.017,0,0,0,504,256,248.44936,248.44936,0,0,0,501.70312,224ZM192,240a80,80,0,1,1,80-80A80.00021,80.00021,0,0,1,192,240ZM384,343.13867A940.33806,940.33806,0,0,1,256,352c-87.34375,0-168.71094-11.46094-239.28906-31.73633C45.05859,426.01953,141.29688,504,256,504a247.45808,247.45808,0,0,0,192-91.0918V384H384Z"
+                class="fa-secondary"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M256,320c-90.52344,0-174.80469-13.23047-246.27344-35.73438a246.11376,246.11376,0,0,0,6.98438,35.998C87.28906,340.53906,168.65625,352,256,352s168.71094-11.46094,239.28906-31.73633a246.11376,246.11376,0,0,0,6.98438-35.998C430.80469,306.76953,346.52344,320,256,320Zm-64-80a80,80,0,1,0-80-80A80.00021,80.00021,0,0,0,192,240Zm0-104a24,24,0,1,1-24,24A23.99993,23.99993,0,0,1,192,136Z"
+                class="fa-primary"
+              ></path>
+            </g>
+          </svg>
+          <span class="link-text">SOCIAL-MEDIA</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="../HOME/index.html#contact-us" class="nav-link">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fad"
+            data-icon="space-shuttle"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 22 22"
+            class="svg-inline--fa fa-space-shuttle fa-w-20 fa-5x"
+          >
+            <g class="fa-group">
+              <path
+                fill="currentColor"
+                d="M10 19.748V16.4c0-1.283.995-2.292 2.467-2.868A8.482 8.482 0 0 0 9.5 13c-1.89 0-3.636.617-5.047 1.66A8.017 8.017 0 0 0 10 19.748zm8.88-3.662C18.485 15.553 17.17 15 15.5 15c-2.006 0-3.5.797-3.5 1.4V20a7.996 7.996 0 0 0 6.88-3.914zM9.55 11.5a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5zm5.95 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"
+                class="fa-secondary"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M10 19.748V16.4c0-1.283.995-2.292 2.467-2.868A8.482 8.482 0 0 0 9.5 13c-1.89 0-3.636.617-5.047 1.66A8.017 8.017 0 0 0 10 19.748zm8.88-3.662C18.485 15.553 17.17 15 15.5 15c-2.006 0-3.5.797-3.5 1.4V20a7.996 7.996 0 0 0 6.88-3.914zM9.55 11.5a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5zm5.95 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"
+                class="fa-primary"
+              ></path>
+            </g>
+          </svg>
+          <span class="link-text">CONTACT US</span>
+        </a>
+      </li>
+
+      <li class="nav-item" id="themeButton">
+        <a href="#" class="nav-link">
+          <svg
+            class="theme-icon"
+            id="lightIcon"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fad"
+            data-icon="moon-stars"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="svg-inline--fa fa-moon-stars fa-w-16 fa-7x"
+          >
+            <g class="fa-group">
+              <path
+                fill="currentColor"
+                d="M320 32L304 0l-16 32-32 16 32 16 16 32 16-32 32-16zm138.7 149.3L432 128l-26.7 53.3L352 208l53.3 26.7L432 288l26.7-53.3L512 208z"
+                class="fa-secondary"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M332.2 426.4c8.1-1.6 13.9 8 8.6 14.5a191.18 191.18 0 0 1-149 71.1C85.8 512 0 426 0 320c0-120 108.7-210.6 227-188.8 8.2 1.6 10.1 12.6 2.8 16.7a150.3 150.3 0 0 0-76.1 130.8c0 94 85.4 165.4 178.5 147.7z"
+                class="fa-primary"
+              ></path>
+            </g>
+          </svg>
+          <svg
+            class="theme-icon"
+            id="solarIcon"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fad"
+            data-icon="sun"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="svg-inline--fa fa-sun fa-w-16 fa-7x"
+          >
+            <g class="fa-group">
+              <path
+                fill="currentColor"
+                d="M502.42 240.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.41-94.8a17.31 17.31 0 0 0-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4a17.31 17.31 0 0 0 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.41-33.5 47.3 94.7a17.31 17.31 0 0 0 31 0l47.31-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3a17.33 17.33 0 0 0 .2-31.1zm-155.9 106c-49.91 49.9-131.11 49.9-181 0a128.13 128.13 0 0 1 0-181c49.9-49.9 131.1-49.9 181 0a128.13 128.13 0 0 1 0 181z"
+                class="fa-secondary"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M352 256a96 96 0 1 1-96-96 96.15 96.15 0 0 1 96 96z"
+                class="fa-primary"
+              ></path>
+            </g>
+          </svg>
+          <svg
+            class="theme-icon"
+            id="darkIcon"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fad"
+            data-icon="sunglasses"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+            class="svg-inline--fa fa-sunglasses fa-w-18 fa-7x"
+          >
+            <g class="fa-group">
+              <path
+                fill="currentColor"
+                d="M574.09 280.38L528.75 98.66a87.94 87.94 0 0 0-113.19-62.14l-15.25 5.08a16 16 0 0 0-10.12 20.25L395.25 77a16 16 0 0 0 20.22 10.13l13.19-4.39c10.87-3.63 23-3.57 33.15 1.73a39.59 39.59 0 0 1 20.38 25.81l38.47 153.83a276.7 276.7 0 0 0-81.22-12.47c-34.75 0-74 7-114.85 26.75h-73.18c-40.85-19.75-80.07-26.75-114.85-26.75a276.75 276.75 0 0 0-81.22 12.45l38.47-153.8a39.61 39.61 0 0 1 20.38-25.82c10.15-5.29 22.28-5.34 33.15-1.73l13.16 4.39A16 16 0 0 0 180.75 77l5.06-15.19a16 16 0 0 0-10.12-20.21l-15.25-5.08A87.95 87.95 0 0 0 47.25 98.65L1.91 280.38A75.35 75.35 0 0 0 0 295.86v70.25C0 429 51.59 480 115.19 480h37.12c60.28 0 110.38-45.94 114.88-105.37l2.93-38.63h35.76l2.93 38.63c4.5 59.43 54.6 105.37 114.88 105.37h37.12C524.41 480 576 429 576 366.13v-70.25a62.67 62.67 0 0 0-1.91-15.5zM203.38 369.8c-2 25.9-24.41 46.2-51.07 46.2h-37.12C87 416 64 393.63 64 366.11v-37.55a217.35 217.35 0 0 1 72.59-12.9 196.51 196.51 0 0 1 69.91 12.9zM512 366.13c0 27.5-23 49.87-51.19 49.87h-37.12c-26.69 0-49.1-20.3-51.07-46.2l-3.12-41.24a196.55 196.55 0 0 1 69.94-12.9A217.41 217.41 0 0 1 512 328.58z"
+                class="fa-secondary"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M64.19 367.9c0-.61-.19-1.18-.19-1.8 0 27.53 23 49.9 51.19 49.9h37.12c26.66 0 49.1-20.3 51.07-46.2l3.12-41.24c-14-5.29-28.31-8.38-42.78-10.42zm404-50l-95.83 47.91.3 4c2 25.9 24.38 46.2 51.07 46.2h37.12C489 416 512 393.63 512 366.13v-37.55a227.76 227.76 0 0 0-43.85-10.66z"
+                class="fa-primary"
+              ></path>
+            </g>
+          </svg>
+          <span class="link-text">Themify</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+  <!--------------------------------------- TIPS --------------------------------------------------->
+<div class="top-gap"></div>
+
+<div class="c-slot">
+  <div class="details">
+    <div class="query">REDBUBBLE</div>
+    <div class="seg1">
+      <div class=c-image>
+        <img src="Images/redbubble.png">
+      </div>
+      <div class="intro">Redbubble is a site that allows users to purchase art from independent artists. Artists can upload their designs and customers can choose to have those designs printed on over 70 different products, from art prints to mugs and beyond.
+        <br><br>Link: <a href="https://www.redbubble.com/">https://www.redbubble.com/</a>
+        <br><br>Source: <a href="https://www.redbubble.com/about/selling">https://www.redbubble.com/about/selling</a>
+      </div>
+    </div>
+    <h>STEPS:</h>
+    <div class="tip">
+      <b>1. Create a Redbubble Account:</b><br>
+         - Sign up on the <a href="https://www.redbubble.com/signup?ref=artist">Redbubble website</a>.<br><br>
+      
+      <b>2. Set Up Your Shop:</b><br>
+         - Access the "Sell Your Art" section to set up your shop.<br><br>
+      
+      <b>3. Upload Artwork:</b><br>
+         - Upload your digital artwork with the specified guidelines.<br><br>
+      
+      <b>4. Choose Products:</b><br>
+         - Select the products you want to showcase your art on.<br><br>
+      
+      <b>5. Customize and Set Prices:</b><br>
+         - Customize product placement, size, and set prices with your desired profit margin.<br><br>
+      
+      <b>6. Add Tags and Descriptions:</b><br>
+         - Enhance discoverability by adding relevant tags and descriptions.<br><br>
+      
+      <b>7. Publish Products:</b><br>
+         - Make your products live on the Redbubble marketplace.<br><br>
+      
+      <b>8. Promote Your Shop:</b><br>
+         - Share your Redbubble shop on social media and other platforms.<br><br>
+      
+      <b>9. Manage Orders:</b><br>
+         - Monitor sales and let Redbubble handle printing, shipping, and customer service.<br><br>
+      
+      <b>10. Receive Payments:</b><br>
+         - Receive earnings through PayPal based on your set profit margin.<br><br>
+      
+      <b>Tips:</b><br>
+         - Regularly update your shop with new artwork.<br>
+         - Engage with the Redbubble community for visibility.<br>
+         - Utilize Redbubble's promotional tools and discounts.
+    </div>
+  </div>
+</div>
+
+<div class="c-slot">
+  <div class="details">
+    <div class="query">TEESPRING</div>
+    <div class="seg1">
+      <div class=c-image>
+        <img src="Images/teespring.png">
+      </div>
+      <div class="intro">If you are a print shop owner or work in the printing industry, you are probably no stranger to the name Teespring- the largest print-on-demand platform in the world. Starting with a t-shirt sales platform, Teespring now expands into other areas and grows stronger.
+        <br><br>Link: <a href="https://teespring.com">https://teespring.com</a>
+        <br><br>Source: <a href="https://sellmerch.org/how-to-sell-shirts-and-make-money-with-teespring/">https://sellmerch.org/how-to-sell-shirts-and-make-money-with-teespring/</a>
+      </div>
+    </div>
+    <h>STEPS:</h>
+    <div class="tip">
+      <b>1. Create a Teespring Account:</b><br>
+         - Sign up on <a href="https://teespring.com/signup">Teespring</a> using your email or existing Google/Facebook account.<br><br>
+      
+      <b>2. Start a New Campaign:</b><br>
+         - Click "Start Designing" or "Create & Sell" to initiate a new campaign.<br><br>
+      
+      <b>3. Choose Product Type:</b><br>
+         - Select the product you want to sell, such as t-shirts, hoodies, or mugs.<br><br>
+      
+      <b>4. Design Your Product:</b><br>
+         - Use Teespring's design tools to create your custom product with images or text.<br><br>
+      
+      <b>5. Set Your Sales Goal:</b><br>
+         - Determine the number of items you aim to sell; Teespring calculates base costs accordingly.<br><br>
+      
+      <b>6. Set Your Selling Price:</b><br>
+         - Choose a selling price, and Teespring shows your profit margin based on costs.<br><br>
+      
+      <b>7. Create a Campaign Title and Description:</b><br>
+         - Give your campaign a catchy title and provide a detailed description of your design.<br><br>
+      
+      <b>8. Choose Campaign Duration:</b><br>
+         - Decide how long your campaign will run, setting a specific timeframe for purchases.<br><br>
+      
+      <b>9. Add Product Options:</b><br>
+         - Customize product options like color and size variations to offer choices to customers.<br><br>
+      
+      <b>10. Set Up Your Store:</b><br>
+          - Consider creating a Teespring store to organize multiple campaigns in one place.<br><br>
+      
+      <b>11. Preview Your Product:</b><br>
+          - Use Teespring's preview feature to visualize your product. Make necessary adjustments.<br><br>
+      
+      <b>12. Launch Your Campaign:</b><br>
+          - Click "Launch" to make your products available for purchase once satisfied with your design.<br><br>
+      
+      <b>13. Market Your Campaign:</b><br>
+          - Share your campaign on various platforms to reach a broader audience.<br><br>
+      
+      <b>14. Track Sales and Analytics:</b><br>
+          - Monitor campaign performance through Teespring's analytics, tracking sales and engagement.<br><br>
+      
+      <b>15. Fulfillment and Payout:</b><br>
+          - Teespring handles order fulfillment, printing, packing, and shipping. Receive profits after campaign completion.<br><br>
+      
+      <b>Note:</b><br>
+          - Adhere to Teespring's guidelines, and utilize their customer support if needed.<br><br>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="c-slot">
+  <div class="details">
+    <div class="query">NAMEEEEEE</div>
+    <div class="seg1">
+      <div class=c-image>
+        <img src="dd.png">
+      </div>
+      <div class="intro"> ABOUTTTT
+        <br><br>Link: <a href="linkkk">linkkk</a>
+        <br><br>Source: <a href="linkkk">linkkk</a>
+      </div>
+    </div>
+    <h>STEPS:</h>
+    <div class="tip">
+    
+    </div>
+  </div>
+</div>
+-->
+
+<!--------------------------------------- TIPS --------------------------------------------------->
+
+  <!-- Repeat the c-slot div for other slots -->
+  <!-- Make sure to replace the image source and slot details with the respective information -->
+
+<script>
+  let name=localStorage.getItem('name')?localStorage.getItem('name'):''
+  console.log(name);
+  if(name=='')
+  {
+    window.location.href="../HOME/index.html";
+  }
+
+function Logout()
+        {
+          localStorage.removeItem('name');
+          localStorage.removeItem('email');
+          window.location.href="../LOGIN/login.html";
+        }
+</script>
+</body>
+</html>
